@@ -1,0 +1,123 @@
+current directory: /Users/pro_heboping/rails/vet_hippo/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.5/ext/nokogiri
+/Users/pro_heboping/.rbenv/versions/2.3.7/bin/ruby -r ./siteconf20181106-78342-srtfh6.rb extconf.rb --use-system-libraries --with-xml2-include=/usr/local/opt/libxml2/include/libxml2
+Ignoring bindex-0.5.0 because its extensions are not built.  Try: gem pristine bindex --version 0.5.0
+Ignoring bootsnap-1.3.2 because its extensions are not built.  Try: gem pristine bootsnap --version 1.3.2
+Ignoring byebug-10.0.2 because its extensions are not built.  Try: gem pristine byebug --version 10.0.2
+Ignoring ffi-1.9.25 because its extensions are not built.  Try: gem pristine ffi --version 1.9.25
+Ignoring msgpack-1.2.4 because its extensions are not built.  Try: gem pristine msgpack --version 1.2.4
+Ignoring nio4r-2.3.1 because its extensions are not built.  Try: gem pristine nio4r --version 2.3.1
+Ignoring puma-3.12.0 because its extensions are not built.  Try: gem pristine puma --version 3.12.0
+Ignoring sqlite3-1.3.13 because its extensions are not built.  Try: gem pristine sqlite3 --version 1.3.13
+Ignoring websocket-driver-0.7.0 because its extensions are not built.  Try: gem pristine websocket-driver --version 0.7.0
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using system libraries.
+pkg-config could not be used to find libxslt
+Please install either `pkg-config` or the pkg-config gem per
+
+    gem install pkg-config -v "~> 1.1"
+
+pkg-config could not be used to find libexslt
+Please install either `pkg-config` or the pkg-config gem per
+
+    gem install pkg-config -v "~> 1.1"
+
+checking for xmlParseDoc() in libxml/parser.h... no
+checking for xmlParseDoc() in -lxml2... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... no
+checking for xsltParseStylesheetDoc() in -lxslt... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... no
+checking for exsltFuncRegister() in -lexslt... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/pro_heboping/rails/vet_hippo/vendor/bundle/ruby/2.3.0/extensions/x86_64-darwin-17/2.3.0-static/nokogiri-1.8.5/mkmf.log
+
+current directory: /Users/pro_heboping/rails/vet_hippo/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.5/ext/nokogiri
+make "DESTDIR=" clean
+
+current directory: /Users/pro_heboping/rails/vet_hippo/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.5/ext/nokogiri
+make "DESTDIR="
+compiling html_document.c
+compiling html_element_description.c
+compiling html_entity_lookup.c
+compiling html_sax_parser_context.c
+compiling html_sax_push_parser.c
+compiling nokogiri.c
+compiling xml_attr.c
+compiling xml_attribute_decl.c
+compiling xml_cdata.c
+compiling xml_comment.c
+compiling xml_document.c
+compiling xml_document_fragment.c
+compiling xml_dtd.c
+xml_dtd.c:47:47: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
+  xmlHashScan((xmlHashTablePtr)dtd->entities, element_copier, (void *)hash);
+                                              ^~~~~~~~~~~~~~
+/usr/local/opt/libxml2/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
+                                         xmlHashScanner f,
+                                                        ^
+xml_dtd.c:69:48: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
+  xmlHashScan((xmlHashTablePtr)dtd->notations, notation_copier, (void *)hash);
+                                               ^~~~~~~~~~~~~~~
+/usr/local/opt/libxml2/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
+                                         xmlHashScanner f,
+                                                        ^
+xml_dtd.c:91:49: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
+  xmlHashScan((xmlHashTablePtr)dtd->attributes, element_copier, (void *)hash);
+                                                ^~~~~~~~~~~~~~
+/usr/local/opt/libxml2/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
+                                         xmlHashScanner f,
+                                                        ^
+xml_dtd.c:113:47: warning: incompatible pointer types passing 'void (void *, void *, const xmlChar *)' (aka 'void (void *, void *, const unsigned char *)') to parameter of type 'xmlHashScanner' (aka 'void (*)(void *, void *, unsigned char *)') [-Wincompatible-pointer-types]
+  xmlHashScan((xmlHashTablePtr)dtd->elements, element_copier, (void *)hash);
+                                              ^~~~~~~~~~~~~~
+/usr/local/opt/libxml2/include/libxml2/libxml/hash.h:210:22: note: passing argument to parameter 'f' here
+                                         xmlHashScanner f,
+                                                        ^
+4 warnings generated.
+compiling xml_element_content.c
+compiling xml_element_decl.c
+compiling xml_encoding_handler.c
+compiling xml_entity_decl.c
+compiling xml_entity_reference.c
+compiling xml_io.c
+compiling xml_libxml2_hacks.c
+compiling xml_namespace.c
+compiling xml_node.c
+compiling xml_node_set.c
+compiling xml_processing_instruction.c
+compiling xml_reader.c
+compiling xml_relax_ng.c
+compiling xml_sax_parser.c
+compiling xml_sax_parser_context.c
+compiling xml_sax_push_parser.c
+compiling xml_schema.c
+compiling xml_syntax_error.c
+compiling xml_text.c
+compiling xml_xpath_context.c
+compiling xslt_stylesheet.c
+linking shared-object nokogiri/nokogiri.bundle
+Ignoring bindex-0.5.0 because its extensions are not built.  Try: gem pristine bindex --version 0.5.0
+Ignoring bootsnap-1.3.2 because its extensions are not built.  Try: gem pristine bootsnap --version 1.3.2
+Ignoring byebug-10.0.2 because its extensions are not built.  Try: gem pristine byebug --version 10.0.2
+Ignoring ffi-1.9.25 because its extensions are not built.  Try: gem pristine ffi --version 1.9.25
+Ignoring msgpack-1.2.4 because its extensions are not built.  Try: gem pristine msgpack --version 1.2.4
+Ignoring nio4r-2.3.1 because its extensions are not built.  Try: gem pristine nio4r --version 2.3.1
+Ignoring puma-3.12.0 because its extensions are not built.  Try: gem pristine puma --version 3.12.0
+Ignoring sqlite3-1.3.13 because its extensions are not built.  Try: gem pristine sqlite3 --version 1.3.13
+Ignoring websocket-driver-0.7.0 because its extensions are not built.  Try: gem pristine websocket-driver --version 0.7.0
+Cleaning files only used during build.
+rm -rf /Users/pro_heboping/rails/vet_hippo/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.5/ports/archives
+
+current directory: /Users/pro_heboping/rails/vet_hippo/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.5/ext/nokogiri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20181106-78342-ycbalv/nokogiri
